@@ -2,6 +2,8 @@
 
 Bu proje, Insider kariyer portalının otomatik testleri için geliştirilmiştir. Python, Selenium WebDriver ve Page Object Model (POM) design pattern kullanılarak oluşturulmuştur.
 
+Projenin geliştirmesi Fedora Linux üzerinde yapıldığı için ve test edileceği makine bilinmediği için Webdriver-manager kullanıldı. 
+
 ##  Test Senaryosu
 
 Bu test aşağıdaki adımları otomatik olarak gerçekleştirir:
@@ -174,28 +176,6 @@ SCREENSHOT_ON_FAILURE=true
 - ✅ **Parametrik browser seçimi**
 - ✅ **Retry mekanizması**
 - ✅ **Structured logging**
-
-## 🐛 Sorun Giderme
-
-### Yaygın Sorunlar
-
-1. **WebDriver bulunamıyor**: `webdriver-manager` otomatik olarak driver'ları indirir
-2. **Element bulunamıyor**: Screenshot'ları kontrol edin, sayfa yapısı değişmiş olabilir
-3. **Timeout hataları**: `.env` dosyasında timeout değerlerini artırın
-4. **Make komutu bulunamıyor**: Make kurulumu bölümünü kontrol edin
-5. **Windows'ta make sorunları**: Git Bash kullanın veya `mingw32-make` komutunu deneyin
-
-### Log Kontrolü
-
-```bash
-# Log dosyasını kontrol edin
-cat logs/test.log
-
-# Detaylı çıktı için
-pytest tests/test_insider_careers.py -v -s
-```
-
-## 📝 Test Detayları
 
 Test, aşağıdaki teknolojileri kullanır:
 - **Python 3.8+**
