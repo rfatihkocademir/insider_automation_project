@@ -41,7 +41,7 @@ class JobDetailPage(BasePage):
             timeout: Element bekleme süresi (varsayılan: 10 saniye)
         """
         super().__init__(driver, timeout)  # BasePage constructor'ını çağır
-        print("📄 İş detay sayfası page object'i oluşturuldu")
+        print(" İş detay sayfası page object'i oluşturuldu")
 
     def verify_on_lever(self) -> None:
         """Lever sayfasında olduğumuzu ve başvuru bölümünün mevcut olduğunu doğrula.
@@ -66,7 +66,7 @@ class JobDetailPage(BasePage):
             f"Beklenen: 'jobs.lever.co' içeren URL, "
             f"Mevcut: {current_url}"
         )
-        print("✅ URL kontrolü başarılı - Lever sayfasındayız")
+        print(" URL kontrolü başarılı - Lever sayfasındayız")
         
         # Başvuru bölümünün varlığını kontrol et
         print(" Başvuru bölümü kontrolü yapılıyor...")
