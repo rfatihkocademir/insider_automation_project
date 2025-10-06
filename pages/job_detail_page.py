@@ -57,24 +57,24 @@ class JobDetailPage(BasePage):
         
         # Mevcut URL'i al
         current_url = self.driver.current_url
-        print(f"🌐 Mevcut URL: {current_url}")
+        print(f" Mevcut URL: {current_url}")
         
         # URL'in Lever domain'ini içerdiğini kontrol et
-        print("🔗 URL kontrolü yapılıyor...")
+        print(" URL kontrolü yapılıyor...")
         assert "jobs.lever.co" in current_url, (
-            f"❌ Beklenmeyen domain! "
+            f" Beklenmeyen domain! "
             f"Beklenen: 'jobs.lever.co' içeren URL, "
             f"Mevcut: {current_url}"
         )
         print("✅ URL kontrolü başarılı - Lever sayfasındayız")
         
         # Başvuru bölümünün varlığını kontrol et
-        print("📝 Başvuru bölümü kontrolü yapılıyor...")
+        print(" Başvuru bölümü kontrolü yapılıyor...")
         assert self.exists(*self.APPLY_SECTION), (
-            "❌ Başvuru bölümü bulunamadı! "
+            "Başvuru bölümü bulunamadı! "
             "Lever sayfasında 'Apply for this job' başlığı veya 'Apply' butonu olmalı. "
             "Sayfa yapısı değişmiş olabilir."
         )
-        print("✅ Başvuru bölümü bulundu")
+        print("Başvuru bölümü bulundu")
         
-        print("🎉 Lever sayfası doğrulaması başarıyla tamamlandı!")
+        print("Lever sayfası doğrulaması başarıyla tamamlandı!")
