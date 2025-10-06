@@ -22,7 +22,7 @@ Bu test aşağıdaki adımları otomatik olarak gerçekleştirir:
 
 ### 1. Projeyi indirin
 ```bash
-git clone <repository-url>
+git clone https://github.com/rfatihkocademir/insider_automation_project.git
 cd insider-test-automation
 ```
 
