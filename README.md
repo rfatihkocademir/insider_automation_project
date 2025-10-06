@@ -2,7 +2,7 @@
 
 Bu proje, Insider kariyer portalının otomatik testleri için geliştirilmiştir. Python, Selenium WebDriver ve Page Object Model (POM) design pattern kullanılarak oluşturulmuştur.
 
-##  Test Senearyosu
+##  Test Senaryosu
 
 Bu test aşağıdaki adımları otomatik olarak gerçekleştirir:
 
